@@ -98,6 +98,8 @@
       .nav-item {
         position: relative;
         font-size: 11px;
+
+        
   
         .moreContainer{
           display: flex;
@@ -142,7 +144,7 @@
   
         .dropdown-menu {
           display:none;
-          margin-top: 5px;
+          margin-top: 4px;
           position: absolute;
           list-style-type: none;
           align-items: center;
@@ -162,12 +164,23 @@
   
             &:hover {
               background-color: #555;
+              border-radius: 10px
             }
           }
         }
-  
+
+        .dropdown-menu::before {
+          content: '';
+          position: absolute;
+          top: -10px; /* Adjust the size of the hover area */
+          left: -10px; /* Adjust the size of the hover area */
+          right: -10px; /* Adjust the size of the hover area */
+          bottom: -10px; /* Adjust the size of the hover area */
+          z-index: -1; /* Ensure the pseudo-element is behind the dropdown menu */
+        }
         &:hover .dropdown-menu {
           display: block;
+          border-radius: 10px;
         }
       }
     }
