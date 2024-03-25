@@ -265,12 +265,25 @@ body {
   margin-top: 10px;
   margin-left: 2vh;
   margin-right: 100px;
+  
   // left:1vh;
+  color: black;
+}
+.prev:hover{
+  
+  // left:1vh;
+  cursor: pointer;
+  color: black;
+}
+.next:hover{
+  
+  // left:1vh;
+  cursor: pointer;
   color: black;
 }
 .next{
   background-color: transparent;
-  // display: flex;
+  display: flex;
   // // flex-direction: column-reverse;
   margin-top: 10px;
   // align-items: end;
@@ -278,7 +291,7 @@ body {
   color: black;
 }
 #arrows{
-
+  display: flex;
   position: relative;
   background-color: transparent;
   justify-content: space-between;
